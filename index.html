@@ -1,0 +1,68 @@
+<!DOCTYPLE html>
+<html lang="en">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  <body>
+    <!--H1 element-->
+    <h1 id="title">Survey Form</h1>
+    <!--P element-->
+        <p id="description">Please take
+          a moment to complete our
+          survey.</p>
+    <!--Form-->
+  <form id="survey-form">
+    <!--Name-->
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" name="name"
+        placeholder="Enter your full name" required>
+    <!--Email-->
+        <label for="email" id="email-label">
+        Email</label>
+        <input type="email" id="email" name="email"
+        placeholder="Enter your email" required>
+    <!--Number-->
+        <label for="number" id="number-label">Age
+        </label>
+        <input type="number" id="number" name="number"
+        min="13" max="120" placeholder="Enter your age (years)">
+    <!--Dropdown-->
+       <label for="dropdown" id="dropdown-label">How did you hear about us?</label>
+        <select id="dropdown" name="dropdown">
+          <option value="" disabled selected>(Select channel)</option>
+            <option value="option1">Facebook Ad</option>
+            <option value="option2">Radio</option>
+            <option value="option3">TV Commercial
+            </option>
+        </select>
+    <!--Radio Buttons-->
+        <p>Programming Level:</p>
+        <input type="radio" id="radio1" name="radio-group" value="option1">
+        <label for="radio1">Beginner</label>
+        
+        <input type="radio" id="radio2" name="radio-group" value="option2">
+        <label for="radio2">Intermediate</label>
+
+        <input type="radio" id="radio3" name="radio-group" value="option3">
+        <label for="radio3">Professional</label>
+        <br>
+    <!--Checkboxes-->
+        <p>What type of developer are you?</p>
+        <input type="checkbox" id="checkbox1" name="checkbox-group" value="option1">
+        <label for="checkbox1">Front End</label>
+        
+        <input type="checkbox" id="checkbox2" name="checkbox-group" value="option2">
+        <label for="checkbox2">Back End</label>
+        
+        <input type="checkbox" id="checkbox3" name="checkbox-group" value="option3">
+        <label for="checkbox3">Full Stack</label>
+        <br>
+        <!--Textarea-->
+        <label for="comments">Any comments or suggestions?</label>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Enter your comments here"></textarea>
+        <!--Submit Button-->
+        <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+  </html>
